@@ -15,6 +15,13 @@ namespace TestSamples
         }
 
         [TestMethod]
+        public void IsRunningOnWSL()
+        {
+            Console.WriteLine(RuntimeInformation.OSDescription);
+            Assert.IsTrue(RuntimeInformation.IsOSPlatform(OSPlatform.Linux) && RuntimeInformation.OSDescription.Contains("WSL"));
+        }
+
+        [TestMethod]
         public void IsRunningOnWindows()
         {
             Console.WriteLine(RuntimeInformation.OSDescription);
