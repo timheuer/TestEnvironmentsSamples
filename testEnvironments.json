@@ -1,0 +1,25 @@
+{
+  "environments": [
+    {
+      "name": "linux dotnet-core-sdk-3.1",
+      "type": "docker",
+      "dockerImage": "vsut31"
+    },
+    {
+      "name": "WSL-Ubuntu",
+      "type": "wsl",
+      "wslDistribution": "Ubuntu"
+    },
+    {
+      "name": "linux dotnet-core-sdk-5.0",
+      "type": "docker",
+      "dockerImage": "vsut5"
+    },
+    {
+      "name": "6.0-apline",
+      "type": "docker",
+      "dockerImage": "vsut6p3"
+    }
+  ],
+  "version": "1"
+}
